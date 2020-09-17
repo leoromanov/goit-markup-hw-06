@@ -57,7 +57,47 @@
                     <button type="button" class="hero-button" href="" data-modal-open>Заказать услугу</button>
                 </div>
             </div>
-            
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <b class="modal-title">Оставьте свои данные, мы Вам перезвоним</b>
+                    <form class="modal-form">
+                        <div class="modal-form-field">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" id="name" autocomplete="off" required>
+                        </div>
+
+                        <div class="modal-form-field">
+                            <label for="tel">Телефон</label>
+                            <input type="tel" name="tel" id="tel" autocomplete="off" required>
+                        </div>
+
+                        <div class="modal-form-field">
+                            <label for="mail">Почта</label>
+                            <input type="email" name="mail" id="mail" autocomplete="off" required>
+                        </div>
+
+                        <div class="modal-form-field">
+                            <label for="comment">Оставте комментарий</label>
+                            <textarea class="comment" name="comment" id="comment"  rows="10" placeholder="Введите текст"></textarea>
+                        </div>
+
+                        <div class="modal-form-field">
+                           <input type="checkbox" name="accept" id="checkbox" required>
+                           <label for="checkbox">
+                               Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                           </label>
+                        </div>
+
+                        <button type="submit">Отправить</button>
+
+                    </form>
+                    <button class="modal-button" outline:none data-modal-close>
+                        <svg class="cross-button">
+                            <use href="./images/symbol-defs.svg#close-black"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
             <!-- <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button type="button" data-modal-close>
@@ -399,15 +439,7 @@
             </div>
         </div> 
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="modal-button" outline:none data-modal-close>
-                <svg class="cross-button">
-                    <use href="./images/symbol-defs.svg#close-black"></use>
-                </svg>
-            </button>
-        </div>
-    </div>
+    
     <script src="./js/modal.js"></script>
 </body>
 </html>

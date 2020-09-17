@@ -125,6 +125,29 @@ color: var(--text-color)
     pointer-events: none;
 }
 
+.modal-title {
+    display: inline-block;
+    width: 448px;
+    padding-top: 25px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+}
+
+.modal-form textarea {
+    resize: none;
+}
+
+.modal-form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 /* .modal {
     position: absolute;
     height: 581px;
