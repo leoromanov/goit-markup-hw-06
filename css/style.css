@@ -119,7 +119,13 @@ color: var(--text-color)
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: fill var(--transition);
 }
+
+.modal-button:hover, .modal-button:focus .cross-button {
+    fill: var(--accent-color);
+}
+
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -198,6 +204,7 @@ color: var(--text-color);
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    /* transition: outline-color var(--transition); */
 }
 
 .form-icon {
@@ -206,7 +213,7 @@ color: var(--text-color);
     height: 18px;
     left: 12px;
     top: 50%;
-    fill: var(--link-color);
+    transition: fill var(--transition);
 
 }
 
