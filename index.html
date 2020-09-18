@@ -61,34 +61,56 @@
                 <div class="modal">
                     <b class="modal-title">Оставьте свои данные, мы Вам перезвоним</b>
                     <form class="modal-form">
-                        <div class="modal-form-field">
-                            <label for="name">Имя</label>
-                            <input type="text" name="name" id="name" autocomplete="off" required>
-                        </div>
+                        
+                            <div class="modal-form-field">
+                                <label for="name" class="modal-label">Имя</label>
+                                <input type="text" class="modal-input" name="name" id="name" autocomplete="off" required>
+                                <svg class="form-icon">
+                                    <use href="./images/symbol-defs.svg#person-black"></use>
+                                </svg>
+                            </div>
 
-                        <div class="modal-form-field">
-                            <label for="tel">Телефон</label>
-                            <input type="tel" name="tel" id="tel" autocomplete="off" required>
-                        </div>
+                            <div class="modal-form-field">
+                                <label for="tel" class="modal-label">Телефон</label>
+                                <input type="tel" class="modal-input" name="tel" id="tel" autocomplete="off" required>
+                                <svg class="form-icon">
+                                    <use href="./images/symbol-defs.svg#phone-black"></use>
+                                </svg>
+                            </div>
 
-                        <div class="modal-form-field">
-                            <label for="mail">Почта</label>
-                            <input type="email" name="mail" id="mail" autocomplete="off" required>
-                        </div>
+                            <div class="modal-form-field">
+                                <label for="mail" class="modal-label">Почта</label>
+                                <input type="email" class="modal-input" name="mail" id="mail" autocomplete="off" required>
+                                <svg class="form-icon">
+                                    <use href="./images/symbol-defs.svg#mail-black"></use>
+                                </svg>
+                            </div>
 
-                        <div class="modal-form-field">
-                            <label for="comment">Оставте комментарий</label>
-                            <textarea class="comment" name="comment" id="comment"  rows="10" placeholder="Введите текст"></textarea>
-                        </div>
-
-                        <div class="modal-form-field">
-                           <input type="checkbox" name="accept" id="checkbox" required>
-                           <label for="checkbox">
-                               Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                            <div class="modal-form-field">
+                                <label for="comment" class="modal-label">Оставте комментарий</label>
+                                <textarea class="comment" name="comment" id="comment"  rows="10" placeholder="Введите текст"></textarea>
+                            </div>
+                        
+                            <div class="modal-accept-field">
+                                <input type="checkbox" class="checkbox" name="accept" id="checkbox" required>
+                                <label for="checkbox" class="checkbox-label">
+                                Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                                <!-- <span class="modal-icon"></span> -->
+                                <!-- <span class="accept-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span> -->
+                               </label>
+                            </div>
+                        
+                        
+                        
+                            <!-- <div class="modal-accept-field">
+                            <label for="checkbox" class="modal-label">
+                            <input type="checkbox" class="checkbox" name="accept" id="checkbox" required>
+                            <span class="modal-icon"></span>
+                               <span class="accept-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
                            </label>
-                        </div>
+                        </div> -->
 
-                        <button type="submit">Отправить</button>
+                        <button class="modal-submit" type="submit">Отправить</button>
 
                     </form>
                     <button class="modal-button" outline:none data-modal-close>
